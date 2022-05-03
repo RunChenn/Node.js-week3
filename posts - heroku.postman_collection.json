@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1dfad8f1-6197-4a1d-a991-fceaec7135d4",
+		"name": "posts - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://stark-tor-52045.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"stark-tor-52045",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"hello1\",\n    \"content\": \"今天天氣好爛\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stark-tor-52045.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"stark-tor-52045",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://stark-tor-52045.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"stark-tor-52045",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://stark-tor-52045.herokuapp.com/posts/1234",
+					"protocol": "https",
+					"host": [
+						"stark-tor-52045",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"今天好多人確診\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stark-tor-52045.herokuapp.com/posts/6261635e2630e8a528c8f610",
+					"protocol": "https",
+					"host": [
+						"stark-tor-52045",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6261635e2630e8a528c8f610"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
